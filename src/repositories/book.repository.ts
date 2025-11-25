@@ -1,10 +1,9 @@
 import { Book } from "../types/book.type";
 
-
-let books: Book[] = {
-    { id: 'B-1', title: "Harry potter"},
+let books: Book[] = [
+    { id: 'B-1', title: 'Harry potter' },
     { id: 'B-2', title: 'Lord of the rings', date: '29-05-2001' }
-};
+];
 
 export interface IBookRepository {
     createBook(book: Book): Book;
